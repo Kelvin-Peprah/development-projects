@@ -1,8 +1,8 @@
 body {
   font-family: roboto;
   background-color:hsl(219, 56%, 89%);
-  padding: 200px;
   margin: 0;
+  padding: 200px 0;
 }
 
 /*Header attribute style*/
@@ -21,10 +21,10 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  width: 200px;
   background-color: white;
   border-radius: 20px;
   margin: 0 auto;
+  width: 350px;
 }
 
 img {
@@ -39,8 +39,21 @@ img {
 }
 
 .content{
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 400;
   text-align: center;
   color: hsl(210, 2%, 67%);
+}
+
+@media (max-width: 750px) {
+  #main-container {
+    width: 300px;
+  }
+  img {
+    width: 100%;
+  }
+  .header, .content {
+    font-size: 20px;
+    text-align: center;
+  }
 }
